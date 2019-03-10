@@ -31,3 +31,23 @@
     transform: rotate(360deg);
   }
 }
+
+.banner {
+  width: 100%;
+}
+
+.login-stuff {
+  background: white;
+  position: fixed;
+  right: 0;
+  margin: 1pc;
+  height: 10%;
+  width: 15%;
+}
+
+.nav-bar {
+  width: 10%;
+  height: 5%;
+  display: inline-block;
+  background: blue;
+}
