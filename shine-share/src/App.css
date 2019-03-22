@@ -34,6 +34,7 @@
 
 .banner {
   width: 100%;
+  margin-bottom: -.4%;
 }
 
 .login-stuff {
@@ -41,13 +42,57 @@
   position: fixed;
   right: 0;
   margin: 1pc;
-  height: 10%;
-  width: 15%;
+  height: 5%;
+  width: 20%;
 }
 
-.nav-bar {
-  width: 10%;
+.navbar {
   height: 5%;
+  margin: -0%;
+  background: yellow;
+}
+
+.navbar-item {
+  width: 20%;
+  height: 2pc;
   display: inline-block;
-  background: blue;
+}
+
+#popular-hunts  {
+  width: 30%;
+  margin-top: 0%;
+  background: green;
+  display: inline-block;
+
+}
+
+.popular-hunts-card {
+  margin: 1pc;
+  align-items: center;
+  overflow: auto;
+  flex-direction: column;
+  background: bisque;
+}
+
+.popular-hunts-card-image {
+  flex: 0 auto;
+  float: right;
+  position: absolute;
+}
+
+.popular-hunts-card-text {
+  display: inline-block;
+}
+
+#news {
+  width: 70%;
+  margin-top: 0%;
+  background: red;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#register-login-page{
+  background: #08081A;
+  
 }
