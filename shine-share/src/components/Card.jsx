@@ -15,17 +15,19 @@ class Card extends Component {
   }
 
   delta(url) {
-    this.setState({ Image: url});
+    this.setState({ Image: url });
   }
 
   setInitialState() {
     this.setState({ Name: this.props.name, Gender: this.props.gender, Game: this.props.game });
   }
 
-  handleEvent() {
-    console.log(this.props);
-  }
+  //Check Correct info is being loaded
+  // handleEvent() {
+  //   console.log(this.props);
+  // }
 
+  //Check if Image Exists using a promise
   testImage(url) {
     // Define the promise
     const imgPromise = new Promise(function imgPromise(resolve, reject) {
@@ -47,13 +49,31 @@ class Card extends Component {
   }
 
   setImage(parent) {
+    //Delcare impportant variables
+    let gender = this.props.gender;
+    let name = this.props.name;
     let imageLink = '';
-    imageLink = `https://play.pokemonshowdown.com/sprites/xyani/${this.props.name.toLowerCase()}-${this.props.gender.toLowerCase()}.gif`;
+    let backupImageLink = ';'
 
-    let backupImageLink = `https://play.pokemonshowdown.com/sprites/xyani/${this.props.name.toLowerCase()}.gif`;
-    // console.log(this.backupImageLink);
+    //search for image
+    if (gender !== '!' && gender !== '?' && gender !== 'm' && gender !== 'none') {
 
+      imageLink = `https://play.pokemonshowdown.com/sprites/xyani-shiny/${name.toLowerCase()}-${gender.toLowerCase()}.gif`;
+
+      backupImageLink = `https://play.pokemonshowdown.com/sprites/xyani-shiny/${name.toLowerCase()}.gif`;
+    }
+    else if (this.props.gender === '!'){
+      imageLink = `https://play.pokemonshowdown.com/sprites/xyani-shiny/${name.toLowerCase()}-exclamation.gif`;
+    }
+    else if (this.props.gender === '?'){
+      imageLink = `https://play.pokemonshowdown.com/sprites/xyani-shiny/${name.toLowerCase()}-question.gif`;
+    }
+    else{
+      imageLink = `https://play.pokemonshowdown.com/sprites/xyani-shiny/${name.toLowerCase()}.gif`;
+    }
     this.setState({ Image: imageLink });
+
+    //Check if Image Exists
     this.testImage(imageLink).then(
       function fulfilled(img) {
         console.log('That image is found and loaded', img);
@@ -67,15 +87,13 @@ class Card extends Component {
     );
   }
 
-  imageFix(image) {
-    image.src = this.state.BackupImage;
-  }
-
+  //render at startup
   componentDidMount() {
     this.setInitialState();
     this.setImage(this);
-    this.handleEvent();
+    // this.handleEvent();
   }
+
   render() {
     return (
       <div className='popular-hunts-card'>

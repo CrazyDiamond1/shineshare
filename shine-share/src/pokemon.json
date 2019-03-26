@@ -13,7 +13,13 @@
       "region": "Ultra-Moon",
       "date": "5/23/2018",
       "gender": "m"
-
+    },
+    {
+      "species": "Groudon",
+      "nickname": "Sentinel",
+      "region": "Ultra-Moon",
+      "date": "5/23/2018",
+      "gender": "none"
     }
   ]
 }
