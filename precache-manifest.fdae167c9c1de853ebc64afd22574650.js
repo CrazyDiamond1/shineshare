@@ -8,19 +8,19 @@ self.__precacheManifest = [
     "url": "/ShineShare/static/js/runtime~main.2d0abac2.js"
   },
   {
-    "revision": "aa26154ac4311205be12",
-    "url": "/ShineShare/static/js/main.de36e3f2.chunk.js"
+    "revision": "9de1c1960880c0be97b6",
+    "url": "/ShineShare/static/js/main.9b1ce07b.chunk.js"
   },
   {
     "revision": "4d7e96be59193d519db4",
     "url": "/ShineShare/static/js/2.217bb704.chunk.js"
   },
   {
-    "revision": "aa26154ac4311205be12",
+    "revision": "9de1c1960880c0be97b6",
     "url": "/ShineShare/static/css/main.95d8e059.chunk.css"
   },
   {
-    "revision": "743cb47db15a64138b477bf0fa96f0e2",
+    "revision": "e08997b8d935ad24808711baa91d3d6e",
     "url": "/ShineShare/index.html"
   }
 ];
