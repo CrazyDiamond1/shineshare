@@ -1,14 +1,14 @@
 {
-  "main.css": "/ShineShare/static/css/main.1ea9f9f8.chunk.css",
-  "main.js": "/ShineShare/static/js/main.1fef4fc2.chunk.js",
-  "main.js.map": "/ShineShare/static/js/main.1fef4fc2.chunk.js.map",
-  "runtime~main.js": "/ShineShare/static/js/runtime~main.2d0abac2.js",
-  "runtime~main.js.map": "/ShineShare/static/js/runtime~main.2d0abac2.js.map",
-  "static/js/2.4274835b.chunk.js": "/ShineShare/static/js/2.4274835b.chunk.js",
-  "static/js/2.4274835b.chunk.js.map": "/ShineShare/static/js/2.4274835b.chunk.js.map",
-  "index.html": "/ShineShare/index.html",
-  "precache-manifest.79a507a3e9c77cff6254d7c47efa2f2f.js": "/ShineShare/precache-manifest.79a507a3e9c77cff6254d7c47efa2f2f.js",
-  "service-worker.js": "/ShineShare/service-worker.js",
-  "static/css/main.1ea9f9f8.chunk.css.map": "/ShineShare/static/css/main.1ea9f9f8.chunk.css.map",
-  "static/media/App.css": "/ShineShare/static/media/ShineShareTemp.9dd573a1.png"
+  "main.css": "/shineshare/static/css/main.8f6b9a66.chunk.css",
+  "main.js": "/shineshare/static/js/main.b97a7c51.chunk.js",
+  "main.js.map": "/shineshare/static/js/main.b97a7c51.chunk.js.map",
+  "runtime~main.js": "/shineshare/static/js/runtime~main.7a3ea440.js",
+  "runtime~main.js.map": "/shineshare/static/js/runtime~main.7a3ea440.js.map",
+  "static/js/2.4274835b.chunk.js": "/shineshare/static/js/2.4274835b.chunk.js",
+  "static/js/2.4274835b.chunk.js.map": "/shineshare/static/js/2.4274835b.chunk.js.map",
+  "index.html": "/shineshare/index.html",
+  "precache-manifest.5f37d06e11eab569524ca7a8779c4499.js": "/shineshare/precache-manifest.5f37d06e11eab569524ca7a8779c4499.js",
+  "service-worker.js": "/shineshare/service-worker.js",
+  "static/css/main.8f6b9a66.chunk.css.map": "/shineshare/static/css/main.8f6b9a66.chunk.css.map",
+  "static/media/App.css": "/shineshare/static/media/ShineShareTemp.9dd573a1.png"
 }
