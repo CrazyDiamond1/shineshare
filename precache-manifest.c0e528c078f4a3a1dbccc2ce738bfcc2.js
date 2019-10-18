@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/ShineShare/static/css/main.1ea9f9f8.chunk.css"
   },
   {
-    "revision": "c90225e63474b0b7230e3c16971f5cbf",
+    "revision": "0c88d16d1fa8f2636810993459c7f8fa",
     "url": "/ShineShare/index.html"
   }
 ];
