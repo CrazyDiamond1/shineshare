@@ -105,10 +105,10 @@ class Card extends Component {
     return (
       <div className='popular-hunts-card'>
         <div className='popular-hunts-card-text'>
-          <div >{this.state.Name}</div>
-          <div >{this.state.Game}</div>
+          <div id='pop-name'>{this.state.Name}</div>
+          <div id='pop-game'>{this.state.Game}</div>
         </div>
-        <img src={this.state.Image} />
+        <img id='pop-image' src={this.state.Image} />
       </div>
     )
   }

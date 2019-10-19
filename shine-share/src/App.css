@@ -1,153 +1,273 @@
-.App {
-  text-align: center;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, span, applet, object, iframe,
+ h4, h5, h6, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body {
+	line-height: 1;
 }
-
-.App-link {
-  color: #61dafb;
+ol, ul {
+	list-style: none;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+blockquote, q {
+	quotes: none;
 }
-
-@-webkit-keyframes bgpt {
-  from {
-    background-position: 0 0;
-  }
-
-  to {
-    background-position: -2000px 0;
-  }
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
 }
-
-@keyframes bgpt {
-  from {
-    background-position: 0 0;
-  }
-
-  to {
-    background-position: -2000px 0;
-  }
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 #page-container {
-  position: relative;
   min-height: 100vh;
+  width: 100%;
+  margin: 0;
 }
 
 #content-wrap {
+  width: 100%;
+  height: 190vh;
+  background: #13377F;
+  margin: auto;
   padding-bottom: 4rem;    /* Footer height */
 }
 
-.banner {
-  width: 100%;
-  height:200px;
-  margin-bottom: -.4%;
-  background: url("./images/ShineShareTemp.png") repeat-x;
-  animation: bgpt 60s infinite linear;
+/* HEADER */
+.header {
+  z-index: 1;
+  min-width: auto;
+  height:100%;
+  top: 0;
+  left: 0;
+  width:100%;
+  height:80px;
+  position: sticky;
+  background: #F7FBFF; /*F7FBFF*/
 }
 
-.login-panel {
-  color: white;
+.header-logo {
+  background: url('../src/images/ShineShareLogoNoBack.svg');
+  height: 50px;
+  width: 27px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  margin-top: 15px; 
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.text-logo {
+  display: inline;
+  position: sticky;
+  font-family: 'Segoe UI';
+}
+
+.text-logo1{
+  display: inline-block;
+  color: #1F9AFF;
+  font-family: 'Segoe UI';
+  font-size: 50px;
+  font-weight: bold;
+}
+.text-logo2{
+  display: inline-block;
+  color: #13377F;
+  font-family: 'Segoe UI';
+  font-size: 50px;
+  font-weight: bold;
+}
+
+/* NavBar */
+
+.nav-center{
+  position: fixed;
+  margin-left: -350px;
+  margin-top: 95px;
+}
+
+.large-center {
+  position: relative;
+  border-radius: 50%;
+  height: 700px;
+  width: 700px;
+  background: #1F9AFF;
+  /* 
+    Child elements with absolute positioning will be 
+    positioned relative to this div 
+   */
+}
+.small-center {
   position: absolute;
-  right: 0;
-  margin: 1pc;
-  height: 5%;
-  width: 20%;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  height: 400px;
+  width: 400px;
+  margin: -200px 0px 0px -200px;
+  background: #F7FBFF;
 }
 
-.register-link {
-  text-align: end;
-}
-
-.navbar {
-  height: 5%;
-  margin: -0%;
-  background: yellow;
+.large-logo {
+  position: absolute;
+  background: url('../src/images/ShineShareLogoNoBack.svg');
+  display: inline-block;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 100px;
+  top: 25%;
+  left: 60%;
 }
 
 .navbar-item {
-  width: 20%;
-  height: 2pc;
-  display: inline-block;
+  position: fixed;
+  z-index: 1;
+  font-family: 'Montserrat';
+  color: #F7FBFF;
+  font-size: 50px;
+  margin-right: 20px; 
 }
 
-#popular-hunts  {
-  width: 30%;
-  margin-top: 0%;
-  background: green;
-  display: inline-block;
+.navItem0 {
+  margin-top: 7.5%;
+  
+}
+
+.navItem1 {
+  margin-top: 14%;
+  margin-left: 10%;
+}
+
+.navItem2 {
+  margin-top: 22.5%;
+  margin-left: 12%;
+}
+
+.navItem3 {
+  margin-top: 30%;
+  margin-left: 10%;
+}
+
+.navItem4 {
+  margin-top: 36.5%;
+}
+
+.navSelected {
+  background: #00CBFF;
+  height: 65px;
+}
+
+/* POPULAR HUNTS */
+#popular-hunts {
+  position: absolute;
+  background: #1F9AFF;
+  width: 300px;
+  right: 0px;
+  border-radius: 30px;
+  margin: 50px;
+  padding: 15px;
+  font-family: 'Segoe UI';
+  font-weight: bold;
 }
 
 .popular-hunts-card {
-  margin: 1pc;
-  align-items: center;
-  overflow: auto;
-  flex-direction: column;
-  background: bisque;
-}
-
-.popular-hunts-card-image {
-  flex: 0 auto;
-  float: right;
-  position: absolute;
+  margin: 5px;
 }
 
 .popular-hunts-card-text {
+  position: relative;
   display: inline-block;
+  width: 120px;
+  height: 120px;
+  margin: 0;
 }
 
+#pop-name {
+
+}
+
+#pop-game {
+
+}
+
+#pop-image {
+  position: relative;
+  display: inline;
+  height: 100px;
+}
+
+
+/* NEWS */
 #news {
-  width: 70%;
-  margin-top: 0%;
-  background: red;
-  display: inline-block;
-  vertical-align: top;
-}
-
-.news-card {
-  margin: 1pc;
-  align-items: center;
-  overflow: auto;
-  flex-direction: column;
-  background: lightcoral;
-}
-
-.news-card-text {
-  display: inline-block;
-}
-
-#register-login-page{
-  background: #08081A;
-}
-
-#footer {
-  background: darkblue;
   position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 4.5rem; 
+  background: #1F9AFF;
+  width: 650px;
+  left: 750px;
+  border-radius: 30px;
+  margin-top: 50px;
+  padding: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/*FOOTER*/
+#footer {
+  position: fixed;
+  bottom: 0;
+}
+#copyright{
+  color: #F7FBFF;
+}
+
+/* GENERIC */
+a {
+  text-decoration: none;
+}
+
+div {
+  color: #F7FBFF;
+}
+
+h1 {
+  margin: 0;
+  color: #F7FBFF;
+}
+
+h2 {
+  color: #F7FBFF;
+}
+
+h3 {
+  color: #F7FBFF;
+}
+
+ul {
+  margin: 0;
+}

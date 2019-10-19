@@ -4,7 +4,6 @@
   "homepage": "http://crazydiamond1.github.io/shineshare",
   "private": true,
   "dependencies": {
-    "jquery": "^3.4.1",
     "mongodb": "^3.2.1",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",

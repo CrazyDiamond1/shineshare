@@ -1,0 +1,153 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes bgpt {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: -2000px 0;
+  }
+}
+
+@keyframes bgpt {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: -2000px 0;
+  }
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 4rem;    /* Footer height */
+}
+
+.banner {
+  width: 100%;
+  height:200px;
+  margin-bottom: -.4%;
+  background: url("./images/ShineShareTemp.png") repeat-x;
+  animation: bgpt 60s infinite linear;
+}
+
+.login-panel {
+  color: white;
+  position: absolute;
+  right: 0;
+  margin: 1pc;
+  height: 5%;
+  width: 20%;
+}
+
+.register-link {
+  text-align: end;
+}
+
+.navbar {
+  height: 5%;
+  margin: -0%;
+  background: yellow;
+}
+
+.navbar-item {
+  width: 20%;
+  height: 2pc;
+  display: inline-block;
+}
+
+#popular-hunts  {
+  width: 30%;
+  margin-top: 0%;
+  background: green;
+  display: inline-block;
+}
+
+.popular-hunts-card {
+  margin: 1pc;
+  align-items: center;
+  overflow: auto;
+  flex-direction: column;
+  background: bisque;
+}
+
+.popular-hunts-card-image {
+  flex: 0 auto;
+  float: right;
+  position: absolute;
+}
+
+.popular-hunts-card-text {
+  display: inline-block;
+}
+
+#news {
+  width: 70%;
+  margin-top: 0%;
+  background: red;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.news-card {
+  margin: 1pc;
+  align-items: center;
+  overflow: auto;
+  flex-direction: column;
+  background: lightcoral;
+}
+
+.news-card-text {
+  display: inline-block;
+}
+
+#register-login-page{
+  background: #08081A;
+}
+
+#footer {
+  background: darkblue;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 4.5rem; 
+}
+

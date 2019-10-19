@@ -41,6 +41,27 @@
       "region": "Ultra-Moon",
       "date": "5/23/2018",
       "gender": "m"
+    },
+    {
+      "species": "Fletchinder",
+      "nickname": "f",
+      "region": "Ultra-Moon",
+      "date": "5/23/2018",
+      "gender": "m"
+    },
+    {
+      "species": "Scolipede",
+      "nickname": "F",
+      "region": "Ultra-Moon",
+      "date": "5/23/2018",
+      "gender": "m"
+    },
+    {
+      "species": "Dusclops",
+      "nickname": "F",
+      "region": "Ultra-Moon",
+      "date": "5/23/2018",
+      "gender": "m"
     }
   ]
 }
