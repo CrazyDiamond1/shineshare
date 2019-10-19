@@ -32,14 +32,46 @@
   }
 }
 
+@-webkit-keyframes bgpt {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: -2000px 0;
+  }
+}
+
+@keyframes bgpt {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: -2000px 0;
+  }
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 4rem;    /* Footer height */
+}
+
 .banner {
   width: 100%;
+  height:200px;
   margin-bottom: -.4%;
+  background: url("./images/ShineShareTemp.png") repeat-x;
+  animation: bgpt 60s infinite linear;
 }
 
 .login-panel {
   color: white;
-  position: fixed;
+  position: absolute;
   right: 0;
   margin: 1pc;
   height: 5%;
@@ -67,7 +99,6 @@
   margin-top: 0%;
   background: green;
   display: inline-block;
-
 }
 
 .popular-hunts-card {
@@ -96,12 +127,27 @@
   vertical-align: top;
 }
 
+.news-card {
+  margin: 1pc;
+  align-items: center;
+  overflow: auto;
+  flex-direction: column;
+  background: lightcoral;
+}
+
+.news-card-text {
+  display: inline-block;
+}
+
 #register-login-page{
   background: #08081A;
 }
 
 #footer {
   background: darkblue;
-  margin-bottom: 0%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 4.5rem; 
 }
 

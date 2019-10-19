@@ -21,10 +21,10 @@ class Header extends Component {
           </form>
           
           <div className='register-link'>
-            <p>Need to <Link to='/Register' className='navbar-item'>REGISTER?</Link></p>
+            <p>Need to <Link to='/register' className='navbar-item'>REGISTER?</Link></p>
           </div>
         </div>
-        <img className='banner' alt='' src={require('../images/ShineShareTemp.png')} />
+        <div className='banner'/>
         <NavBar />
       </div>
     )

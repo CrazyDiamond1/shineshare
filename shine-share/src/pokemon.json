@@ -1,25 +1,46 @@
 {
   "pokemon": [
     {
-      "species": "Primeape",
-      "nickname": "Holly",
+      "species": "Pikachu",
+      "nickname": "F",
       "region": "Ultra-Moon",
-      "date": "5/31/2018",
-      "gender": "m"
+      "date": "5/23/2018",
+      "gender": "f"
     },
     {
-      "species": "Dusclops",
-      "nickname": "Sentinel",
+      "species": "Unown",
+      "nickname": "F",
+      "region": "Ultra-Moon",
+      "date": "5/23/2018",
+      "gender": "f"
+    },
+    {
+      "species": "Venusaur",
+      "nickname": "F",
       "region": "Ultra-Moon",
       "date": "5/23/2018",
       "gender": "m"
     },
     {
-      "species": "Groudon",
-      "nickname": "Sentinel",
+      "species": "Unown",
+      "nickname": "U",
       "region": "Ultra-Moon",
       "date": "5/23/2018",
-      "gender": "none"
+      "gender": "e"
+    },
+    {
+      "species": "Charizard",
+      "nickname": "F",
+      "region": "Ultra-Moon",
+      "date": "5/23/2018",
+      "gender": "m"
+    },
+    {
+      "species": "Blastoise",
+      "nickname": "F",
+      "region": "Ultra-Moon",
+      "date": "5/23/2018",
+      "gender": "m"
     }
   ]
 }

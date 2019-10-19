@@ -30,6 +30,7 @@ class Card extends Component {
   //Check if Image Exists using a promise
   testImage(url) {
     // Define the promise
+    //console.log('Inside of TestImage');
     const imgPromise = new Promise(function imgPromise(resolve, reject) {
       // Create the image
       const imgElement = new Image();
@@ -44,7 +45,7 @@ class Card extends Component {
       // Assign URL
       imgElement.src = url;
     });
-
+  
     return imgPromise;
   }
 
@@ -56,17 +57,22 @@ class Card extends Component {
     let backupImageLink = ';'
 
     //search for image
-    if (gender !== '!' && gender !== '?' && gender !== 'm' && gender !== 'none') {
+    if (name.toLowerCase() !== 'unown' && gender !== 'm') {
 
       imageLink = `https://play.pokemonshowdown.com/sprites/xyani-shiny/${name.toLowerCase()}-${gender.toLowerCase()}.gif`;
 
       backupImageLink = `https://play.pokemonshowdown.com/sprites/xyani-shiny/${name.toLowerCase()}.gif`;
     }
-    else if (this.props.gender === '!'){
-      imageLink = `https://play.pokemonshowdown.com/sprites/xyani-shiny/${name.toLowerCase()}-exclamation.gif`;
-    }
-    else if (this.props.gender === '?'){
-      imageLink = `https://play.pokemonshowdown.com/sprites/xyani-shiny/${name.toLowerCase()}-question.gif`;
+    else if (name.toLowerCase() === 'unown'){
+      if (gender === '!'){
+        imageLink = `https://play.pokemonshowdown.com/sprites/xyani-shiny/${name.toLowerCase()}-exclamation.gif`;
+      }
+      else if (gender === '?'){
+        imageLink = `https://play.pokemonshowdown.com/sprites/xyani-shiny/${name.toLowerCase()}-question.gif`;
+      }
+      else{
+        imageLink = `https://play.pokemonshowdown.com/sprites/xyani-shiny/${name.toLowerCase()}-${gender.toLowerCase()}.gif`;
+      }
     }
     else{
       imageLink = `https://play.pokemonshowdown.com/sprites/xyani-shiny/${name.toLowerCase()}.gif`;
@@ -74,14 +80,15 @@ class Card extends Component {
     this.setState({ Image: imageLink });
 
     //Check if Image Exists
+    // $.getScript 
     this.testImage(imageLink).then(
       function fulfilled(img) {
-        console.log('That image is found and loaded', img);
+        //console.log('That image is found and loaded', img);
         parent.delta(imageLink);
       },
 
       function rejected() {
-        console.log('That image was not found');
+        //console.log('That image was not found');
         parent.delta(backupImageLink);
       }
     );

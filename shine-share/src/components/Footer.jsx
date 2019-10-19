@@ -5,7 +5,7 @@ class Footer extends Component {
   render() {
     return (
       <div id="footer">
-        <NavBar/>
+        <p id = "copyright">Copyright ©2018 by Noah W. Tanner</p>
       </div>
     )
   }

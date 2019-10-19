@@ -1,0 +1,19 @@
+{
+  "news": [
+    {
+      "title": "Working on New UI",
+      "content": "I am working an a new UI. I got Adobe XD and started on the 17th! I can't wait for this site to become a reality!",
+      "date": "10/18/2019"
+    },
+    {
+      "title": "Demo Site Deployed to Github Pages!",
+      "content": "Today I learned how to deploy React projects to github! This is so exciting! For those of you who are new, the colors are like this because it's easy to tell what components everything is made from!",
+      "date": "10/15/2019"
+    },
+    {
+      "title": "Look at That!",
+      "content": "Wow look at that!",
+      "date": "5/23/2018"
+    }
+  ]
+}

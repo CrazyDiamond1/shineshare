@@ -1,19 +1,23 @@
 {
   "name": "shine-share",
   "version": "0.1.0",
+  "homepage": "http://crazydiamond1.github.io/shineshare",
   "private": true,
   "dependencies": {
+    "jquery": "^3.4.1",
     "mongodb": "^3.2.1",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "^2.1.8"
+    "react-scripts": "^3.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -24,5 +28,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "gh-pages": "^2.1.1"
+  }
 }
